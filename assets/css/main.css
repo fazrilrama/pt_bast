@@ -1007,6 +1007,25 @@ section,
   backdrop-filter: blur(10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+}
+
+.ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  /* full lebar kartu */
+  background: linear-gradient(to right, #1764e3, #02d9f5);
+  color: #fff;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border-top-left-radius: 20px;  /* biar pas sama border kartu */
+  border-top-right-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
 }
 
 .cards:hover {
@@ -1045,6 +1064,7 @@ section,
   font-weight: 700;
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 20px;
   position: relative;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
