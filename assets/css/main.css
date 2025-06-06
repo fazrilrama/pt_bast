@@ -968,6 +968,42 @@ section,
   transform: scale(1.1);
 }
 
+/* Gallery */
+
+/* .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+} */
+
+.gallery-img {
+  width: 100%;
+  height: 300px; /* tinggi tetap */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 4/3;
+}
+
+.gallery-item.portrait img {
+  aspect-ratio: 3/4; /* Potret */
+}
+
+.gallery-item.landscape img {
+  aspect-ratio: 4/3; /* Landscape */
+}
+
 /* WA */
 .wa-float {
   position: fixed;
