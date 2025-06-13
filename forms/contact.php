@@ -33,6 +33,14 @@
   );
   */
 
+  $contact->smtp = array(
+    'host' => 'mail.bast.co.id',
+    'username' => 'info@bast.co.id',
+    'password' => 'bast@sakti',
+    'port' => 587,
+    'encryption' => 'tls'
+  );
+
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   if(isset($_POST['phone'])) {
